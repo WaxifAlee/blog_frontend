@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wordy Wasif
+
+Wordy Wasif is a playful blog website built using Next.js, Tailwind CSS, and Sanity.io. The website features a collection of blogs written by Wasif, showcasing his thoughts and experiences. The theme of the website is centered around a playful design, with an easy-on-the-eyes contrast of green and red colors for the foreground.
+
+## Features
+
+- Responsive design for mobile and desktop devices.
+- Sleek and elegant blog cards, displaying the image, title, and a brief description of the blogs.
+- Search functionality to filter blogs based on user input.
+- Dynamic blog post pages that show the complete content of each blog.
+- Playful and visually appealing design with custom fonts and colors.
+
+## Technologies Used
+
+- Next.js: A React framework for building server-side rendered and static websites.
+- Tailwind CSS: A utility-first CSS framework for building custom and responsive designs.
+- Sanity.io: A headless CMS for managing content, including blogs and authors.
+- Font Awesome: A popular icon library for adding icons to the website.
+- Framer Motion: A library for creating smooth animations in React.
+
+## Folder Structure
+
+wordy-wasif/
+
+├── blog_backend/
+
+│ ├── ... (backend files and folders)
+
+│
+
+├── blog_frontend/
+
+│ ├── ... (frontend files and folders)
+
+│
+
+├── components/
+
+│ ├── ... (shared components)
+
+│
+
+├── pages/
+
+│ ├── index.js
+
+│ ├── blog/
+
+│ │ ├── [slug].js
+
+│ │
+
+│ ├── ... (other pages)
+
+│
+
+├── client.js
+
+├── ... (other root-level files)
+
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+mkdir <project_name>
+cd <project_name>
+
+git clone https://github.com/WaxifAlee/blog_frontend.git
+git clone https://github.com/WaxifAlee/blog_backend.git
+```
+2. Install The Dependencies
+
+```bash
+cd blog_frontend
+npm install
+
+cd blog_backend
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Start the development server on the local machine
+```bash
+npm run dev
+sanity start
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Do Not Forget To Leave a Star 🌟
+## Happy Coding!
