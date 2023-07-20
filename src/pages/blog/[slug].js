@@ -1,6 +1,8 @@
 import { urlFor, client } from "@/client";
 import Navbar from "@/components/Navbar";
 
+import "../../app/globals.css";
+
 const BlogPost = ({ blog }) => {
   return (
     <>

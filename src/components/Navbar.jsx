@@ -43,27 +43,21 @@ const Navbar = ({ onSearch, searchEnabled }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between self-center">
+      <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="md:w-auto md:mb-0 ">
+        <div className="w-auto mb-0 ">
           <Link
             href="/"
-            className="text-gray-900 font-poppins font-semibold text-2xl"
+            className="text-gray-900 font-dancingScript font-semibold text-2xl"
           >
             Wordy Wasif
           </Link>
         </div>
 
-        {/* Mobile Menu */}
-        <div className="flex items-center md:hidden">
-          {/* Add a mobile menu icon here */}
-          <FontAwesomeIcon icon={faBarsProgress} />
-        </div>
-
         {/* Navigation Links */}
-        <div className="w-full md:w-auto md:flex md:items-center md:space-x-4 hidden md:block">
+        <div className="w-full md:w-auto flex md:items-center md:space-x-4">
           {/* Social Media Icons */}
-          <div className="flex space-x-4">
+          <div className=" space-x-4 md:flex hidden">
             {socials.map((social, index) => (
               <a
                 href={social.url}
@@ -79,7 +73,8 @@ const Navbar = ({ onSearch, searchEnabled }) => {
           {/* Search Bar */}
           <div
             style={inputEnable ? { display: "block" } : { display: "none" }}
-            className="border border-gray-400 px-4 rounded-md focus:outline-none focus:border-green-500"
+            className="border  border-gray-400 px-4 
+            rounded-md focus:outline-none focus:border-green-500 "
           >
             <FontAwesomeIcon icon={faSearch} />
             <input
