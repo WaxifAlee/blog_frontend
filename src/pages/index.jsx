@@ -6,7 +6,7 @@ import BlogCard from "@/components/BlogCard";
 
 import "../app/globals.css";
 
-export default function index() {
+export default function Index() {
   const [blogs, setBlogs] = useState([]);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
 
